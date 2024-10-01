@@ -38,6 +38,8 @@ public class LoginActivity extends AppCompatActivity {
         setupAnimation();
     }
 
+
+
     private void customEditTextPassword() {
         binding.etPassword.addTextChangedListener(new TextWatcher() {
             @Override
@@ -94,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
         tvRegister.setDuration(500);
 
         AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.playSequentially(ivImage, tv1, tv2, etlEmail, etlPassword, btnMasuk, tvRegister);
+        animatorSet.playSequentially(ivImage, tv1, tv2, etlEmail, etlPassword, tvRegister, btnMasuk);
         animatorSet.setStartDelay(100);
         animatorSet.start();
 

@@ -115,14 +115,14 @@ public class RegisterActivity extends AppCompatActivity {
         ObjectAnimator etlConfirmPassword = ObjectAnimator.ofFloat(binding.etlConfirmPassword, View.ALPHA, 1f);
         etlConfirmPassword.setDuration(500);
 
-        ObjectAnimator btnDaftar = ObjectAnimator.ofFloat(binding.btnDaftar, View.ALPHA, 1f);
-        btnDaftar.setDuration(500);
-
         ObjectAnimator tvLogin = ObjectAnimator.ofFloat(binding.tvLogin, View.ALPHA, 1f);
         tvLogin.setDuration(500);
 
+        ObjectAnimator btnDaftar = ObjectAnimator.ofFloat(binding.btnDaftar, View.ALPHA, 1f);
+        btnDaftar.setDuration(500);
+
         AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.playSequentially(ivImage, tv1, tv2, etlEmail, etlPassword, etlConfirmPassword, btnDaftar, tvLogin);
+        animatorSet.playSequentially(ivImage, tv1, tv2, etlEmail, etlPassword, etlConfirmPassword, tvLogin, btnDaftar);
         animatorSet.setStartDelay(100);
         animatorSet.start();
 
